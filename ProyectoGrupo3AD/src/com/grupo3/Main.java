@@ -1,8 +1,10 @@
 package com.grupo3;
 
+import com.grupo3.VO.VOSeleccionCC;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        new VOSeleccionCC();
     }
 }
