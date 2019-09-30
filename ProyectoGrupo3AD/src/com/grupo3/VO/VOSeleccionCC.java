@@ -5,6 +5,8 @@ import com.grupo3.BLL.BaseDeDatos;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class VOSeleccionCC {
     private JButton mysqlButton;
@@ -15,6 +17,7 @@ public class VOSeleccionCC {
     private JPanel inferiorJPanel;
     private JPanel principalJPanel;
     private JPanel contenidoJPanel;
+    private JLabel pruebaLabel;
 
     public VOSeleccionCC() {
         final JFrame frame = new JFrame("Proyecto Grupo 3AD"); // Vamos a usar este Frame en todas las ventanas
@@ -31,7 +34,7 @@ public class VOSeleccionCC {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Aquí se establece el tipo de BDD y el nombre del CC
-                BaseDeDatos.introducirDatosCC("Elejalde","DB4O");
+                BaseDeDatos.introducirDatosCC("Zabalgana","DB4O");
                 voConectarDB.mostrar(frame);
             }
         });
@@ -39,7 +42,7 @@ public class VOSeleccionCC {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Aquí se establece el tipo de BDD y el nombre del CC
-                BaseDeDatos.introducirDatosCC("Ibitzailde","SQLITE");
+                BaseDeDatos.introducirDatosCC("Aldabe","SQLITE");
                 voConectarDB.mostrar(frame);
             }
         });
@@ -55,9 +58,9 @@ public class VOSeleccionCC {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        db4oButton = new JButton(new ImageIcon("resources/db4o.png"));
-        mysqlButton = new JButton(new ImageIcon("resources/mysql.png"));
-        sqliteButton = new JButton(new ImageIcon("resources/sqlite.png"));
+        db4oButton = new JButton(new ImageIcon("resources/zabalgana_main.jpg"));
+        mysqlButton = new JButton(new ImageIcon("resources/iparralde_main.jpg"));
+        sqliteButton = new JButton(new ImageIcon("resources/aldabe_main.jpg"));
     }
 
 
